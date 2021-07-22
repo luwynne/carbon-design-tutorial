@@ -1,0 +1,10 @@
+diff a/src/content/LandingPage/LandingPage.js b/src/content/LandingPage/LandingPage.js	(rejected hunks)
+@@ -98 +98 @@ const LandingPage = () => {
+-          icon={<PersonFavorite32/>}
++          icon={<PersonFavorite32 />}
+@@ -103 +103 @@ const LandingPage = () => {
+-          icon={<Application32/>}
++          icon={<Application32 />}
+@@ -108 +108 @@ const LandingPage = () => {
+-          icon={<Globe32/>}
++          icon={<Globe32 />}

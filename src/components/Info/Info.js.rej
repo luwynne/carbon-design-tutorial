@@ -1,0 +1,34 @@
+diff a/src/components/Info/Info.js b/src/components/Info/Info.js	(rejected hunks)
+@@ -5,4 +5,4 @@ function createArrayFromPhrase(phrase) {
+-    const splitPhrase = phrase.split(' ');
+-    const thirdWord = splitPhrase.pop();
+-    return [splitPhrase.join(' '), thirdWord];
+-  }
++  const splitPhrase = phrase.split(' ');
++  const thirdWord = splitPhrase.pop();
++  return [splitPhrase.join(' '), thirdWord];
++}
+@@ -10 +10 @@ function createArrayFromPhrase(phrase) {
+-const InfoSection = (props) => (
++const InfoSection = props => (
+@@ -19 +19,2 @@ const InfoSection = (props) => (
+-const InfoCard = (props) => {
++const InfoCard = props => {
++  const splitHeading = createArrayFromPhrase(props.heading);
+@@ -21,9 +22,7 @@ const InfoCard = (props) => {
+-    const splitHeading = createArrayFromPhrase(props.heading);
+-    
+-    return (
+-      <article className="info-card bx--col-md-4 bx--col-lg-4 bx--col-xlg-3 bx--offset-xlg-1">
+-        <h4 className="info-card__heading">{props.heading}</h4>
+-        <p className="info-card__body">{props.body}</p>
+-        {props.icon}
+-      </article>
+-    );
++  return (
++    <article className="info-card bx--col-md-4 bx--col-lg-4 bx--col-xlg-3 bx--offset-xlg-1">
++      <h4 className="info-card__heading">{props.heading}</h4>
++      <p className="info-card__body">{props.body}</p>
++      {props.icon}
++    </article>
++  );
